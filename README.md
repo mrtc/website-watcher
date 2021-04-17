@@ -79,6 +79,15 @@ You have to register for the bot first to get an token. To do so, send a message
   --webhook_url WEBHOOK_URL     – URL of the Webhook2Telegram bot instance
 ```
 
+### TelegramDirect (`TelegramDirect`)
+An adapter to send push messages via Telegram using a bot. See https://core.telegram.org/bots#6-botfather for instructions on creating a bot. You will need the Chat ID as well. There are several methods for obtaining this, one such example is here: https://gist.github.com/dideler/85de4d64f66c1966788c1b2304b9caf1ID.
+
+#### Options
+```
+  -b BOT_TOKEN                  – bot token (required), eg: 9876543210:AAAAB-CCCCCCCCCCCCCCCDDDDDEEEEEE456
+  -c CHAT_ID                    – chat id (required), eg: 123456789
+```
+
 ### Gotify (`gotify`)
 This adapter will send an push notification via [Gotify](https://gotify.net).
 First, you have to register a new app in Gotify and gets its key as an authorization token.
